@@ -15,6 +15,6 @@ def char_count(text: str) -> dict:
 
 def sort_char_count(count: dict) -> list:
     sorted_list = []
-    for char, count in sorted(count.items(), key=lambda item: item[1], reverse=True):
-        sorted_list.append({"char": char, "num": count})
+    for char, cnt in sorted(count.items(), key=lambda item: item[1], reverse=True):
+        sorted_list.append({"char": char, "num": cnt})
     return sorted_list

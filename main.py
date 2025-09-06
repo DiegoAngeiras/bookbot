@@ -2,7 +2,7 @@ import sys
 from stats import word_count, char_count, sort_char_count
 
 def get_book_text(file: str) -> str:
-    with open(file, 'r', encoding='utf-8') as f:
+    with open(file, 'r', encoding="utf-8") as f:
         return f.read()
     
 def pretty_print(book_path: str, num_words: int, char_count_list: list):
